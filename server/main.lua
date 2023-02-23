@@ -20,11 +20,12 @@ end)
 
 AddEventHandler('esx:playerDropped', function(src)
     src = tostring(src)
+	local playersCount = #GetPlayers()
     if Customs[src] then
-        for k,v in pairs(Customs[src]) do
+        for k, v in pairs(Customs[src]) do
             local entity = NetworkGetEntityFromNetworkId(v.netId)
             if DoesEntityExist(entity) then
-                if #GetPlayers() > 0 then
+                if playersCount > 0 then
                     TriggerClientEvent('esx_lscustom:restoreMods', -1, v.netId, v.props)
                 else
                     DeleteEntity(entity)
