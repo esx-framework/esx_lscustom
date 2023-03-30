@@ -2,8 +2,8 @@ Locales['it'] = {
   ['by_default'] = 'default',
   ['installed'] = 'installato',
   ['already_own'] = 'possiedi già: %s',
-  ['not_enough_money'] = 'non puoi permetterti questa mod!',
-  ['purchased'] = 'hai acquistato la mod!',
+  ['not_enough_money'] = 'non puoi permetterti questa modifica!',
+  ['purchased'] = 'hai acquistato la modifica!',
   ['press_custom'] = 'premi ~b~[E]~s~ per personalizzare il tuo veicolo',
   ['level'] = 'livello %s',
   ['neon'] = 'neon',
@@ -228,7 +228,7 @@ Locales['it'] = {
   ['windowtint'] = 'tinta finestrino',
   ['horns'] = 'clacson',
   -- Neon
-  ['neons'] = 'neons',
+  ['neons'] = 'neon',
   -- Wheels
   ['wheels'] = 'ruote',
   ['tiresmoke'] = 'fumo pneumatici',
