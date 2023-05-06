@@ -51,14 +51,6 @@ AddEventHandler('onClientResourceStop', function(resource)
 	end
 end)
 
-AddEventHandler('onResourceStop', function(resource)
-	if resource == GetCurrentResourceName() then
-		if lsMenuIsShowed then
-			TriggerEvent('esx_lscustom:cancelInstallMod')
-		end
-	end
-end)
-
 function OpenLSMenu(elems, menuName, menuTitle, parent)
     ESX.UI.Menu.Open('default', GetCurrentResourceName(), menuName, {
         title = menuTitle,
