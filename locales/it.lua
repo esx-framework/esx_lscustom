@@ -268,9 +268,9 @@ Locales['it'] = {
   ['stickers'] = 'Livrea',
 
 -- Xenon Colors
-  ['mintgreen'] = 'Mint Green',
-  ['goldenshower'] = 'Golden Shower',
-  ['ponypink'] = 'Pony Pink',
-  ['hotpink'] = 'Hot Pink',
-  ['blacklight'] = 'Blacklight',
+  ['mintgreen'] = 'Verde Menta',
+  ['goldenshower'] = 'Pioggia Dorata',
+  ['ponypink'] = 'Rosa Pony',
+  ['hotpink'] = 'Rosa Shocking',
+  ['blacklight'] = 'Luce Scura',
 }
