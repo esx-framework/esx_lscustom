@@ -342,7 +342,7 @@ function GetAction(data)
                 elseif v.modType == 'windowTint' then -- WINDOWS TINT
                     for j = 1, 5, 1 do
                         local _label = ''
-                        if j == currentMods.modHorns then
+                        if j == currentMods.windowTint then
                             _label = GetWindowName(j) .. ' - <span style="color:cornflowerblue;">' .. TranslateCap('installed') ..
                                          '</span>'
                         else
