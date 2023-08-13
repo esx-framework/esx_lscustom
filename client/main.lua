@@ -521,8 +521,7 @@ CreateThread(function()
 
             if (ESX.PlayerData.job and ESX.PlayerData.job.name == 'mechanic') or not Config.IsMechanicJobOnly then
                 for k, v in pairs(Config.Zones) do
-                    local zonePos = vector3(v.Pos.x, v.Pos.y, v.Pos.z)
-                    if #(coords - zonePos) < 10.0 then
+                    if #(coords - v.Pos) < 10.0 then
                         Near = true
                         Sleep = 0
                         if not lsMenuIsShowed then

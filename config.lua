@@ -6,7 +6,7 @@ Config.IsMechanicJobOnly = false
 Config.Zones = {
 
 	ls1 = {
-		Pos   = { x = -337.38, y = -136.92, z = 38.57},
+		Pos   = vector3(-337.38, -136.92, 38.57),
 		Size  = {x = 3.0, y = 3.0, z = 0.2},
 		Color = {r = 204, g = 204, b = 0},
 		Marker= 1,
@@ -15,7 +15,7 @@ Config.Zones = {
 	},
 
 	ls2 = {
-		Pos   = { x = -1155.53, y = -2007.18, z = 12.74},
+		Pos   = vector3(-1155.53, -2007.18, 12.74),
 		Size  = {x = 3.0, y = 3.0, z = 0.2},
 		Color = {r = 204, g = 204, b = 0},
 		Marker= 1,
@@ -24,7 +24,7 @@ Config.Zones = {
 	},
 
 	ls3 = {
-		Pos   = { x = 731.81, y = -1088.82, z = 21.73},
+		Pos   = vector3(731.81, -1088.82, 21.73),
 		Size  = {x = 3.0, y = 3.0, z = 0.2},
 		Color = {r = 204, g = 204, b = 0},
 		Marker= 1,
@@ -33,7 +33,7 @@ Config.Zones = {
 	},
 
 	ls4 = {
-		Pos   = { x = 1175.04, y = 2640.21, z = 37.32},
+		Pos   = vector3(1175.04, 2640.21, 37.32),
 		Size  = {x = 3.0, y = 3.0, z = 0.2},
 		Color = {r = 204, g = 204, b = 0},
 		Marker= 1,
@@ -42,7 +42,7 @@ Config.Zones = {
 	},
 
 	ls5 = {
-		Pos   = { x = 110.99, y = 6626.39, z = 30.89},
+		Pos   = vector3(110.99, 6626.39, 30.89),
 		Size  = {x = 3.0, y = 3.0, z = 0.2},
 		Color = {r = 204, g = 204, b = 0},
 		Marker= 1,
@@ -51,6 +51,8 @@ Config.Zones = {
 	}
 
 }
+
+
 
 Config.Colors = {
 	{label = TranslateCap('black'), value = 'black'},
