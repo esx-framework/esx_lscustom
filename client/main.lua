@@ -181,14 +181,18 @@ CreateThread(function()
     while true do
         local coords, waitingtime, waitingbool = GetEntityCoords(PlayerPedId()), 500, true
 
-        for k, v in pairs(Config.Zones) do
-            local distance = #(coords - vector3(v.Pos.x, v.Pos.y, v.Pos.z))
+        if (ESX.PlayerData.job and ESX.PlayerData.job.name == 'mechanic') or not Config.IsMechanicJobOnly then
 
-            if v.Marker ~= -1 and distance < 10 then
-                waitingtime = 0
-                DrawMarker(v.Marker, v.Pos.x, v.Pos.y, v.Pos.z - 0.8, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 2.0, 2.0, 1.0, 0, 191, 255, 100, false, true, 2, true, nil, nil, false)
-                waitingbool = false
+            for k, v in pairs(Config.Zones) do
+                local distance = #(coords - vector3(v.Pos.x, v.Pos.y, v.Pos.z))
+
+                if v.Marker ~= -1 and distance < 10 then
+                    waitingtime = 0
+                    DrawMarker(v.Marker, v.Pos.x, v.Pos.y, v.Pos.z - 0.8, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 2.0, 2.0, 1.0, 0, 191, 255, 100, false, true, 2, true, nil, nil, false)
+                    waitingbool = false
+                end
             end
+
         end
 
         Wait(waitingtime)
