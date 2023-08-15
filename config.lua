@@ -7,45 +7,30 @@ Config.Zones = {
 
 	ls1 = {
 		Pos   = vector3(-337.38, -136.92, 38.57),
-		Size  = {x = 3.0, y = 3.0, z = 0.2},
-		Color = {r = 204, g = 204, b = 0},
-		Marker= 1,
 		Name  = TranslateCap('blip_name'),
 		Hint  = TranslateCap('press_custom')
 	},
 
 	ls2 = {
 		Pos   = vector3(-1155.53, -2007.18, 12.74),
-		Size  = {x = 3.0, y = 3.0, z = 0.2},
-		Color = {r = 204, g = 204, b = 0},
-		Marker= 1,
 		Name  = TranslateCap('blip_name'),
 		Hint  = TranslateCap('press_custom')
 	},
 
 	ls3 = {
 		Pos   = vector3(731.81, -1088.82, 21.73),
-		Size  = {x = 3.0, y = 3.0, z = 0.2},
-		Color = {r = 204, g = 204, b = 0},
-		Marker= 1,
 		Name  = TranslateCap('blip_name'),
 		Hint  = TranslateCap('press_custom')
 	},
 
 	ls4 = {
 		Pos   = vector3(1175.04, 2640.21, 37.32),
-		Size  = {x = 3.0, y = 3.0, z = 0.2},
-		Color = {r = 204, g = 204, b = 0},
-		Marker= 1,
 		Name  = TranslateCap('blip_name'),
 		Hint  = TranslateCap('press_custom')
 	},
 
 	ls5 = {
 		Pos   = vector3(110.99, 6626.39, 30.89),
-		Size  = {x = 3.0, y = 3.0, z = 0.2},
-		Color = {r = 204, g = 204, b = 0},
-		Marker= 1,
 		Name  = TranslateCap('blip_name'),
 		Hint  = TranslateCap('press_custom')
 	}
