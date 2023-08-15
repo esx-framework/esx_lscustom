@@ -186,7 +186,7 @@ CreateThread(function()
 
             if v.Marker ~= -1 and distance < 10 then
                 waitingtime = 0
-                DrawMarker(v.Marker, v.Pos.x, v.Pos.y, v.Pos.z - 0.8, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 2.0, 2.0, 1.0, 100, 100, 100, 100, false, true, 2, true, nil, nil, false)
+                DrawMarker(v.Marker, v.Pos.x, v.Pos.y, v.Pos.z - 0.8, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 2.0, 2.0, 1.0, 0, 191, 255, 100, false, true, 2, true, nil, nil, false)
                 waitingbool = false
             end
         end
