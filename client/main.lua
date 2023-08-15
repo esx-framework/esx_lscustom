@@ -177,6 +177,24 @@ function UpdateMods(data)
     end
 end
 
+CreateThread(function()
+    while true do
+        local coords, waitingtime, waitingbool = GetEntityCoords(PlayerPedId()), 500, true
+
+        for k, v in pairs(Config.Zones) do
+            local distance = #(coords - vector3(v.Pos.x, v.Pos.y, v.Pos.z))
+
+            if v.Marker ~= -1 and distance < 10 then
+                waitingtime = 0
+                DrawMarker(v.Marker, v.Pos.x, v.Pos.y, v.Pos.z - 0.8, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 2.0, 2.0, 1.0, 100, 100, 100, 100, false, true, 2, true, nil, nil, false)
+                waitingbool = false
+            end
+        end
+
+        Wait(waitingtime)
+    end
+end)
+
 function GetAction(data)
     local elements = {}
     local menuName = ''
@@ -501,8 +519,6 @@ CreateThread(function()
         SetBlipSprite(blip, 72)
         SetBlipScale(blip, 0.8)
         SetBlipAsShortRange(blip, true)
-
-        DrawMarker(v.Marker, v.Pos.x, v.Pos.y, v.Pos.z)
 
         BeginTextCommandSetBlipName('STRING')
         AddTextComponentSubstringPlayerName(v.Name)
