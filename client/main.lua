@@ -71,6 +71,9 @@ function OpenLSMenu(elems, menuName, menuTitle, parent)
         if data.current.modType == "modFrontWheels" then
             isRimMod = true
         end
+	if data.current.modType == "modBackWheels" then
+	    isRimMod = true
+	end
 
         for k, v in pairs(Config.Menus) do
 
@@ -252,6 +255,14 @@ function GetAction(data)
                         wheelType = -1,
                         price = Config.DefaultWheelsPriceMultiplier
                    }
+		elseif v.modType == 24 then
+                    elements[#elements + 1] = {
+                        label = " " .. TranslateCap('by_default'),
+                        modType = "modBackWheels",
+                        modNum = -1,
+                        wheelType = -1,
+                        price = Config.DefaultWheelsPriceMultiplier
+                   }
                 else
                     elements[#elements + 1] = {
                         label = " " .. TranslateCap('by_default'),
@@ -377,6 +388,34 @@ function GetAction(data)
                             elements[#elements + 1] = {
                                 label = _label,
                                 modType = 'modFrontWheels',
+                                modNum = j,
+                                wheelType = v.wheelType,
+                                price = v.price
+                           }
+                        end
+                    end
+		elseif v.modType == 24 then -- MOTORCYCLES BACK WHEELS
+                    local props = {}
+
+                    props['wheels'] = v.wheelType
+                    ESX.Game.SetVehicleProperties(vehicle, props)
+
+                    local modCount = GetNumVehicleMods(vehicle, v.modType)
+                    for j = 0, modCount, 1 do
+                        local modName = GetModTextLabel(vehicle, v.modType, j)
+                        if modName then
+                            local _label = ''
+                            if j == currentMods.modBackWheels then
+                                _label = GetLabelText(modName) .. ' - <span style="color:cornflowerblue;">' ..
+                                             TranslateCap('installed') .. '</span>'
+                            else
+                                price = math.floor(vehiclePrice * v.price / 100)
+                                _label = GetLabelText(modName) .. ' - <span style="color:green;">$' .. price ..
+                                             ' </span>'
+                            end
+                            elements[#elements + 1] = {
+                                label = _label,
+                                modType = 'modBackWheels',
                                 modNum = j,
                                 wheelType = v.wheelType,
                                 price = v.price
