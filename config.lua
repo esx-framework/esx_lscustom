@@ -695,7 +695,13 @@ Config.Menus = {
 		modFrontWheelsType4	= TranslateCap('allterrain'),
 		modFrontWheelsType5	= TranslateCap('tuning'),
 		modFrontWheelsType6	= TranslateCap('motorcycle'),
-		modFrontWheelsType7	= TranslateCap('highend')
+		modBackWheelsType6	= TranslateCap('motorcycle2'),
+		modFrontWheelsType7	= TranslateCap('highend'),
+		modFrontWheelsType8	= TranslateCap('dragster'),
+		modFrontWheelsType9	= TranslateCap('street'),
+		modFrontWheelsType10	= TranslateCap('bennys'),
+		modFrontWheelsType11	= TranslateCap('bennysv2'),
+		modFrontWheelsType12	= TranslateCap('rally'),
 	},
 	modFrontWheelsType0 = {
 		label = TranslateCap('sport'),
@@ -746,12 +752,54 @@ Config.Menus = {
 		wheelType = 6,
 		price = 3.26
 	},
+		modBackWheelsType6 = {
+		label = TranslateCap('motorcycle'),
+		parent = 'modBackWheelsTypes',
+		modType = 24,
+		wheelType = 6,
+		price = 3.26
+	},
 	modFrontWheelsType7 = {
 		label = TranslateCap('highend'),
 		parent = 'modFrontWheelsTypes',
 		modType = 23,
 		wheelType = 7,
 		price = 5.12
+	},
+		modFrontWheelsType8 = {
+		label = TranslateCap('dragster'),
+		parent = 'modFrontWheelsTypes',
+		modType = 23,
+		wheelType = 10,
+		price = 5.12
+	},
+	modFrontWheelsType9 = {
+		label = TranslateCap('street'),
+		parent = 'modFrontWheelsTypes',
+		modType = 23,
+		wheelType = 11,
+		price = 4.19
+	},
+	modFrontWheelsType10 = {
+		label = TranslateCap('bennys'),
+		parent = 'modFrontWheelsTypes',
+		modType = 23,
+		wheelType = 8,
+		price = 5.12
+	},
+	modFrontWheelsType11 = {
+		label = TranslateCap('bennysv2'),
+		parent = 'modFrontWheelsTypes',
+		modType = 23,
+		wheelType = 9,
+		price = 5.12
+	},
+	modFrontWheelsType12 = {
+		label = TranslateCap('rally'),
+		parent = 'modFrontWheelsTypes',
+		modType = 23,
+		wheelType = 12,
+		price = 4.19
 	},
 	modFrontWheelsColor = {
 		label = TranslateCap('wheel_color'),
