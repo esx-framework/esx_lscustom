@@ -1,5 +1,5 @@
 Locales['it'] = {
-  ['by_default'] = 'default',
+  ['by_default'] = 'modifica base',
   ['installed'] = 'installato',
   ['already_own'] = 'possiedi già: %s',
   ['not_enough_money'] = 'non puoi permetterti questa modifica!',
@@ -8,8 +8,7 @@ Locales['it'] = {
   ['level'] = 'livello %s',
   ['neon'] = 'neon',
   ['blip_name'] = 'los Santos Customs',
--- Paint Colors
-  -- Black
+  -- Paint Colors
   ['black'] = 'nero',
   ['graphite'] = 'grafite',
   ['black_metallic'] = 'nero metallico',
@@ -127,7 +126,7 @@ Locales['it'] = {
   ['imperial_green'] = 'verde imperiale',
   ['green_bottle'] = 'verde bottiglia',
   ['citrus_green'] = 'verde agrumi',
-  ['green_anis'] = 'verde anici',
+  ['green_anis'] = 'verde anice',
   ['khaki'] = 'cachi',
   ['army_green'] = 'verde militare',
   ['dark_green'] = 'verde scuro',
@@ -138,8 +137,8 @@ Locales['it'] = {
   ['tangerine'] = 'mandarino',
   ['matteorange'] = 'arancio opaco',
   ['lightorange'] = 'arancione chiaro',
-  ['peach'] = 'pesca',
-  ['pumpkin'] = 'zucca',
+  ['peach'] = 'arancione pesca',
+  ['pumpkin'] = 'arancione zucca',
   ['orangelambo'] = 'arancione Lambo',
   -- Brown
   ['brown'] = 'marrone',
@@ -187,13 +186,13 @@ Locales['it'] = {
   ['puregold'] = 'oro puro',
   ['brushedgold'] = 'oro spazzolato',
   ['lightgold'] = 'oro chiaro',
--- License Plates
+  -- License Plates
   ['blue_on_white_1'] = 'blu su bianco 1',
   ['yellow_on_black'] = 'giallo su nero',
   ['yellow_blue'] = 'giallo su blu',
   ['blue_on_white_2'] = 'blu su bianco 2',
   ['blue_on_white_3'] = 'blu su bianco 3',
--- Upgrades
+  -- Upgrades
   ['upgrades'] = 'aggiornamenti',
   ['engine'] = 'motore',
   ['brakes'] = 'freni',
@@ -202,7 +201,7 @@ Locales['it'] = {
   ['armor'] = 'armatura',
   ['turbo'] = 'turbo',
   ['no_turbo'] = 'no turbo',
--- Cosmetics
+  -- Cosmetics
   ['cosmetics'] = 'cosmetici',
   -- Body Parts
   ['bodyparts'] = 'parti del corpo',
@@ -218,7 +217,7 @@ Locales['it'] = {
   ['exhaust'] = 'scarico',
   ['roof'] = 'tetto',
   -- Paint
-  ['respray'] = 'verici',
+  ['respray'] = 'vernici',
   ['primary'] = 'primaria',
   ['secondary'] = 'secondaria',
   ['pearlescent'] = 'perlescente',
@@ -242,7 +241,6 @@ Locales['it'] = {
   ['tuning'] = 'tuning',
   ['motorcycle'] = 'moto',
   ['highend'] = 'fascia alta',
-
   ['modplateholder'] = 'targa - posteriore',
   ['modvanityplate'] = 'targa - anteriore',
   ['interior'] = 'interni',
@@ -254,7 +252,7 @@ Locales['it'] = {
   ['steering_wheel'] = 'volante',
   ['gear_lever'] = 'leva del cambio',
   ['quarter_deck'] = 'quarter-deck',
-  ['speakers'] = 'altoparlanti',
+  ['speakers'] = 'auto parlanti',
   ['trunk'] = 'tronco',
   ['hydraulic'] = 'idraulica',
   ['engine_block'] = 'blocco motore',
@@ -266,11 +264,10 @@ Locales['it'] = {
   ['fuel_tank'] = 'serbatoio carburante',
   ['windows'] = 'finestrini',
   ['stickers'] = 'Livrea',
-
--- Xenon Colors
+  -- Xenon Colors
   ['mintgreen'] = 'Verde Menta',
   ['goldenshower'] = 'Pioggia Dorata',
   ['ponypink'] = 'Rosa Pony',
-  ['hotpink'] = 'Rosa Shocking',
+  ['hotpink'] = 'rosa acceso',
   ['blacklight'] = 'Luce Scura',
 }
