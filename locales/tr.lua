@@ -112,10 +112,10 @@ Locales['tr'] = {
   ['yellow'] = 'Sarı',
   ['wheat'] = 'Buğday',
   ['raceyellow'] = 'Yarış Sarı',
-  ['paleyyellow'] = 'Soluk Sarı',
+  ['paleyellow'] = 'Soluk Sarı',
   ['lightyellow'] = 'Açık Sarı', 
   -- Green
-  ['yeşil'] = 'Yeşil',
+  ['green'] = 'Yeşil',
   ['met_dark_green'] = 'Metalik Koyu Yeşil',
   ['rally_green'] = 'Yeşil Rally',
   ['pine_green'] = 'Çam Yeşili',
@@ -242,6 +242,12 @@ Locales['tr'] = {
   ['tuning'] = 'Tuning',
   ['motorcycle'] = 'Motosiklet',
   ['highend'] = 'Üst Düzey',
+  ['motorcycle2'] = 'Motosiklet Sırtı',
+  ['dragster'] = 'Dragster',
+  ['street'] = 'Sokak',
+  ['bennys'] = 'Bennys',
+  ['bennysv2'] = 'Bennys v2',
+  ['rally'] = 'Miting',
 
   ['modplateholder'] = 'Plaka - Arka',
   ['modvanityplate'] = 'Plaka - Ön',
@@ -266,4 +272,10 @@ Locales['tr'] = {
   ['fuel_tank'] = 'Yakıt Tankı',
   ['windows'] = 'Pencereler',
   ['stickers'] = 'Görünüm',
+-- Xenon Colors
+  ['mintgreen'] = 'Nane Yeşili',
+  ['goldenshower'] = 'Altın Duş',
+  ['ponypink'] = 'Midilli Pembe',
+  ['hotpink'] = 'Sıcak pembe',
+  ['blacklight'] = 'Siyah ışık',
 }
