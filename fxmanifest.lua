@@ -2,10 +2,9 @@ fx_version 'adamant'
 
 game 'gta5'
 
-description 'ESX LS Customs'
+description 'Allows Players to use LS Customs to customise their cars'
 lua54 'yes'
 version '1.0'
-legacyversion '1.9.1'
 
 shared_script '@es_extended/imports.lua'
 
