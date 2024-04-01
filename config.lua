@@ -446,6 +446,22 @@ function GetPlatesName(index)
 		return TranslateCap('blue_on_white_2')
 	elseif (index == 4) then
 		return TranslateCap('blue_on_white_3')
+	elseif (index == 5) then
+		return "North Yankton"
+	elseif (index == 6) then
+		return "Ecola"
+	elseif (index == 7) then
+		return "Las Venturas"
+	elseif (index == 8) then
+		return "Liberty City"
+	elseif (index == 9) then
+		return "Car Meet"
+	elseif (index == 10) then
+		return "Panic"
+	elseif (index == 11) then
+		return "Pounders"
+	elseif (index == 12) then
+		return "Sprunk"
 	end
 end
 
