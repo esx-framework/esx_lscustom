@@ -1,5 +1,6 @@
 local Vehicles, myCar = {}, {}
 local lsMenuIsShowed, HintDisplayed, isInLSMarker = false, false, false
+local gameBuild = GetGameBuildNumber()
 
 RegisterNetEvent('esx:playerLoaded')
 AddEventHandler('esx:playerLoaded', function()
@@ -288,20 +289,39 @@ function GetAction(data)
                        }
                     end
                 elseif v.modType == 'plateIndex' then -- PLATES
-                    for j = 0, 4, 1 do
-                        local _label = ''
-                        if j == currentMods.plateIndex then
-                            _label = GetPlatesName(j) .. ' - <span style="color:cornflowerblue;">' .. TranslateCap('installed') ..
-                                         '</span>'
-                        else
-                            price = math.floor(vehiclePrice * v.price / 100)
-                            _label = GetPlatesName(j) .. ' - <span style="color:green;">$' .. price .. ' </span>'
+                    if gameBuild < 3095 then
+                        for j = 0, 5, 1 do
+                            local _label = ''
+                            if j == currentMods.plateIndex then
+                                _label = GetPlatesName(j) .. ' - <span style="color:cornflowerblue;">' .. TranslateCap('installed') ..
+                                             '</span>'
+                            else
+                                price = math.floor(vehiclePrice * v.price / 1)
+                                _label = GetPlatesName(j) .. ' - <span style="color:green;">$' .. price .. ' </span>'
+                            end
+                            elements[#elements + 1] = {
+                                label = _label,
+                                modType = k,
+                                modNum = j
+                            }
                         end
-                        elements[#elements + 1] = {
-                            label = _label,
-                            modType = k,
-                            modNum = j
-                        }
+                    end
+                    if gameBuild >= 3095 then
+                        for j = 0, 12, 1 do
+                            local _label = ''
+                            if j == currentMods.plateIndex then
+                                _label = GetPlatesName(j) .. ' - <span style="color:cornflowerblue;">' .. TranslateCap('installed') ..
+                                             '</span>'
+                            else
+                                price = math.floor(vehiclePrice * v.price / 1)
+                                _label = GetPlatesName(j) .. ' - <span style="color:green;">$' .. price .. ' </span>'
+                            end
+                            elements[#elements + 1] = {
+                                label = _label,
+                                modType = k,
+                                modNum = j
+                            }
+                        end
                     end
                 elseif v.modType == 22 then -- NEON
                     local _label = ''
